@@ -1,0 +1,58 @@
+@import '~@fullcalendar/core/main.min.css';
+@import '~@fullcalendar/daygrid/main.min.css';
+
+        .calendar {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .prev-month, .next-month {
+            cursor: pointer;
+        }
+
+        .month-year {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .calendar-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .calendar-day {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            border-bottom: 1px solid #ddd;
+        }
+
+        .calendar-day.headers {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+
+        .calendar-day div {
+            text-align: center;
+            padding: 10px;
+            border-right: 1px solid #ddd;
+        }
+
+        .calendar-day div:nth-child(7) {
+            border-right: none;
+        }
+
+        .calendar-day:nth-last-child(1) div {
+            border-bottom: none;
+        }
+ 
